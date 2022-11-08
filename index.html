@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BarHelper</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container center">
+        <header>
+            <h2>BarHelper</h2>
+        </header>
+        
+        <section class="input-container">
+            <h3>Select your spirit</h3>
+            <input type="text" id="drink-input" name="drink" placeholder="ie: bourbon">
+            <button type="button" id="drink-btn">Search</button>
+        </section>
+
+        <section class="display-container hidden">
+            <h1 id="drink-name"></h1>
+
+            <section class="img-container">
+                <button type="button" id="left-btn"> &laquo; </button>
+                <img id="drink-img" src="" alt="">
+                <button type="button" id="right-btn"> &raquo; </button>
+            </section>
+
+            <section class="column-container">
+                <div class="column-left">
+                    <ul class="drink-details"></ul>
+                </div>
+
+                <div class="column-right">
+                    <p class="drink-instructions"></p>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
